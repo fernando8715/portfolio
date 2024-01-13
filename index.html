@@ -18,168 +18,111 @@
 
 <body>
     <header class="header hero">
-        <nav class="main-navegation">
+        <div class="barra">
             <div class="main-logo">
                 <p>Fernando <span class="gradient-text">Ruiz</span></p>
             </div>
-            <ul class="menu-principal">
-                <li class="list-item">
-                    <a class="link" href="#">Inicio</a>
-                </li>
-                <li class="list-item">
-                    <a class="link" href="#">Sobre mi</a>
-                </li>
-                <li class="list-item">
-                    <a class="link" href="#">Proyectos</a>
-                </li>
-                <li class="list-item">
-                    <a class="link" href="#">Contacto</a>
-                </li>
-            </ul>
+            <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a class="link" href="#">Inicio</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="link" href="#">Sobre mi</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="link" href="#">Proyectos</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="btn-curriculum">
                 <a class="btn " href="./docs/learner.pdf" target="_blank" rel="noopener"><span>Descargar CV</span></a>
             </div>
-        </nav>
+        </div>
 
-        <div class="portada">
-            <h1>Fernando Ruiz</h1>
-            <p class="gradient-text">Ingeniero informatico y Desarrollador frontend</p>
+        <div class="portada container">
+            <h1>Fernando <span class="gradient-text">Ruiz</span></h1>
+            <p>Desarrollador web frontend</p>
         </div>
     </header>
 
 
-    <main class="container">
-        <div class="about">
-            <div class="image">
-                <!-- <img src="./image/fernando.JPG" alt="Photo of author Fernando Ruiz"> -->
+    <main class="container main">
+        <h2 class="header__proyectos">Proyectos</h2>
+
+        <div class="cards">
+            <div class="card__container">
+                <article class="card__article">
+                    <img class="card__img" src="./image/CRM con React-RouterDom-Tailwind3.png"
+                        alt="mockup del proyecto CRM">
+                    <div class="card__data">
+                        <h2 class="card__title">CRM</h2>
+                        <span class="card__description">Aplicación para administrar los clientes</span>
+                        <div class="card__footer">
+                            <div class="card__tecnologies">
+                                <img src="./image/html5.svg" alt="">
+                                <img src="./image/css.svg" alt="">
+                                <img src="./image/javascript.svg" alt="">
+                            </div>
+                            <div class="card__enlace">
+                                <a class="card__button">Ir al sitio</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img class="card__img" src="./image/CRM con React-RouterDom-Tailwind3.png"
+                        alt="mockup del proyecto CRM">
+                    <div class="card__data">
+                        <h2 class="card__title">CRM</h2>
+                        <span class="card__description">Aplicación para administrar los clientes.</span>
+                        <div class="card__footer">
+                            <div class="card__tecnologies">
+                                <img src="./image/html5.svg" alt="">
+                                <img src="./image/css.svg" alt="">
+                                <img src="./image/javascript.svg" alt="">
+                            </div>
+                            <div class="card__enlace">
+                                <a class="card__button">Ir al sitio</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img class="card__img" src="./image/CRM con React-RouterDom-Tailwind3.png"
+                        alt="mockup del proyecto CRM">
+                    <div class="card__data">
+                        <h2 class="card__title">CRM</h2>
+                        <span class="card__description">Aplicación para administrar los clientes, realiza el CRUD de eliminar</span>
+                        <div class="card__footer">
+                            <div class="card__tecnologies">
+                                <img src="./image/html5.svg" alt="">
+                                <img src="./image/css.svg" alt="">
+                                <img src="./image/javascript.svg" alt="">
+                            </div>
+                            <div class="card__enlace">
+                                <a class="card__button">Ir al sitio</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
             </div>
-            <div class="information">
-                <h2>Fernando <span>Ruiz</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eius
-                    ipsum,
-                    corrupti beatae nemo voluptas vitae ratione distinctio laudantium inventore consequuntur labore
-                    perspiciatis excepturi quisquam, aut maxime eveniet non ab.</p>
-                <div class="icons-container">
-                    <div class="boton" data-id="fernando8715@hotmail.com">
-                        <div class="icon"><a href="mailto:fernando8715@hotmail.com" class="bi bi-envelope-at" aria-hidden="true"></a></div>
-                    </div>
-                    <div class="boton" data-id="LinkedIn">
-                        <div class="icon" aria-hidden="true"><a class="bi bi-linkedin" href="https://www.linkedin.com/in/fernando-ruiz-b2b290201/" target="_blank"></a></div>
-                    </div>
-                    <div class="boton" data-id="GitHub">
-                        <div class="icon" aria-hidden="true"><a class="bi bi-github"></a></div>
-                    </div>
-                </div> <!--icon-container-->
-            </div> <!--information-->
-        </div> <!--about-->
+        </div>
+
     </main>
 
-    <section class="container">
-        <h2>Proyectos</h2>
-        <div class="proyectos">
 
-            <div class="proyecto">
-                <div class="img-proyecto">
-                    <img src="./image/icono-proyecto.png" alt="icono proyecto">
-                </div>
-                <div class="infoProyecto">
-                    <h4>Proyecto 1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis incidunt id sunt aliquid
-                        minima laborum, voluptates eum delectus voluptatum pariatur.</p>
-                </div>
-                <p>Creado con</p>
-                <div class="btn-enlaces">
-                    <button href="#" class="icon">
-                        <img src="./image/icono-enlace.png" alt="icono de enlñace web">
-                    </button>
-                    <button href="#" class="icon">
-                        <img src="./image/icon-github.png" alt="icono de GitHub">
-                    </button>
-                </div>
-            </div> <!--Fin proyecto-->
+    
 
-            <div class="proyecto">
-                <div class="img-proyecto">
-                    <img src="./image/icono-proyecto.png" alt="icono proyecto">
-                </div>
-                <div class="infoProyecto">
-                    <h4>Proyecto 1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis incidunt id sunt aliquid
-                        minima laborum, voluptates eum delectus voluptatum pariatur.</p>
-                </div>
-                <div class="btn-enlaces">
-
-                    <button href="#" class="icon">
-                        <img src="./image/icono-enlace.png" alt="icono de enlñace web">
-                    </button>
-                    <div class="boton">
-                        <div class="icon" aria-hidden="true"><i class="bi bi-github"></i></div>
-                        <span>GitHub</span>
-                    </div>
-                </div>
-            </div> <!--Fin proyecto-->
-
-            <div class="proyecto">
-                <div class="img-proyecto">
-                    <img src="./image/icono-proyecto.png" alt="icono proyecto">
-                </div>
-                <div class="infoProyecto">
-                    <h4>Proyecto 1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis incidunt id sunt aliquid
-                        minima laborum, voluptates eum delectus voluptatum pariatur.</p>
-                </div>
-                <div class="btn-enlaces">
-                    <button href="#" class="icon">
-                        <p>Sitio web</p>
-                    </button>
-                    <button href="#" class="icon">
-                        <img src="./image/icon-github.png" alt="icono de GitHub">
-
-                    </button>
-                </div>
-            </div> <!--Fin proyecto-->
-    </section> <!-- Fin section proyectos-->
-
-    <section class="container contacto">
-        <h2>Contactame</h2>
-        <form class="formulario">
-            <div>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre">
-            </div>
-            <div>
-                <label for="email">Correo</label>
-                <input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico">
-            </div>
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
-            </div>
-            <input type="submit">
-        </form>
-    </section> <!-- fin section contacto -->
-
-
-    <footer class="footer">
-        <div class="footer__contenido">
-            <h4>Fernando <span class="gradient-text">Ruiz</span></h4>
-            <p class="gradient-text">Ingeniero informatico y Desarrollador frontend</p>
-        </div>
-        <div class="email">
-            <p>fernando8715@hotmail.com</p>
-        </div>
-        <div class="btn-curriculum">
-            <a class="btn" href="./docs/learner.pdf" target="_blank" rel="noopener"><span>Descargar CV</span></a>
-        </div>
-
-    </footer>
-
-    <section class="container">
-        <div class="btn-prueba">
-            <a href="#">prueba</a>
-        </div>
-    </section>
-
+    <script src="./main.js"></script>
 </body>
 
 </html>
