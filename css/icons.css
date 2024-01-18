@@ -1,0 +1,66 @@
+/* botones de iconos */
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* width: 20rem; */
+}
+
+.icons-container .boton {
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    background: var(--background-gradient);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s easy-out;
+    position: relative;
+}
+
+.icons-container .boton::after {
+    content: "" attr(data-id) "";
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+    padding: .2rem .5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+    transition-property: display;
+    transition-duration: .3s;
+}
+
+.icons-container .boton:first-child::after {
+    left: -50px;
+}
+
+.icons-container .boton:hover::after {
+    display: block;
+}
+
+.icons-container .boton .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+}
+
+.icons-container .boton a {
+    font-size: 25px;
+    line-height: 60px;
+    color: black;
+}
+
+.icons-container .boton span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+}
