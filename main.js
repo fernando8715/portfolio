@@ -1,3 +1,4 @@
+// funcionalidad menu
 const nav = document.querySelector('#nav');
 const cerrar = document.querySelector('#cerrar');
 const abrir = document.querySelector('#abrir');
